@@ -1,9 +1,9 @@
 //Semestre 2018 - 1
 //************************************************************//
 //************************************************************//
-//************** Alumno (s): Jiménez Jiménez Luis Alejandro***//
-//*************		grupo: 01							******//
-//*************		actividad del lunes					******//
+//************** Alumno (s): JimÃ©nez JimÃ©nez Luis Alejandro***//
+//*************		grupo: 01		          ****//
+//*************	ejercicio:	cuerpo y brazo juntos	******//
 //************************************************************//
 #include "Main.h"
 
@@ -58,14 +58,14 @@ void InitGL ( void )     // Inicializamos parametros
 void prisma(void)
 {
 	GLfloat vertice [8][3] = {
-				{0.5 ,-0.5, 0.5},    //Coordenadas Vértice 0 V0
-				{-0.5 ,-0.5, 0.5},    //Coordenadas Vértice 1 V1
-				{-0.5 ,-0.5, -0.5},    //Coordenadas Vértice 2 V2
-				{0.5 ,-0.5, -0.5},    //Coordenadas Vértice 3 V3
-				{0.5 ,0.5, 0.5},    //Coordenadas Vértice 4 V4
-				{0.5 ,0.5, -0.5},    //Coordenadas Vértice 5 V5
-				{-0.5 ,0.5, -0.5},    //Coordenadas Vértice 6 V6
-				{-0.5 ,0.5, 0.5},    //Coordenadas Vértice 7 V7
+				{0.5 ,-0.5, 0.5},    //Coordenadas VÃ©rtice 0 V0
+				{-0.5 ,-0.5, 0.5},    //Coordenadas VÃ©rtice 1 V1
+				{-0.5 ,-0.5, -0.5},    //Coordenadas VÃ©rtice 2 V2
+				{0.5 ,-0.5, -0.5},    //Coordenadas VÃ©rtice 3 V3
+				{0.5 ,0.5, 0.5},    //Coordenadas VÃ©rtice 4 V4
+				{0.5 ,0.5, -0.5},    //Coordenadas VÃ©rtice 5 V5
+				{-0.5 ,0.5, -0.5},    //Coordenadas VÃ©rtice 6 V6
+				{-0.5 ,0.5, 0.5},    //Coordenadas VÃ©rtice 7 V7
 				};
 
 		glBegin(GL_POLYGON);	//Front
@@ -126,7 +126,7 @@ void display ( void )   // Creamos la funcion donde se dibuja
 	glTranslatef(transX, 0.0f, transZ);
 	glRotatef(angleY, 0.0, 1.0, 0.0);
 	glRotatef(angleX, 1.0, 0.0, 0.0);
-		//Poner Código Aquí.
+		//Poner CÃ³digo AquÃ­.
 	//brazo detallado
 	glPushMatrix();
 		glRotatef(angHombro,0.0,0.0,1.0);
@@ -274,7 +274,7 @@ void display ( void )   // Creamos la funcion donde se dibuja
 				glPopMatrix();
 				glPopMatrix();
 
-			//Meñique
+			//MeÃ±ique
 			glTranslatef(0.25, -0.25, 0.45);
 			glRotatef(-angMe1, 0.0, 0.0, 1.0);
 			glTranslatef(0.05, 0.0, 0.0);
@@ -502,15 +502,15 @@ int main ( int argc, char** argv )   // Main Function
   glutInitDisplayMode (GLUT_RGB | GLUT_DOUBLE | GLUT_DEPTH); // Display Mode (Clores RGB y alpha | Buffer Doble )
   screenW = glutGet(GLUT_SCREEN_WIDTH);
   screenH = glutGet(GLUT_SCREEN_HEIGHT);
-  glutInitWindowSize  (500, 500);	// Tamaño de la Ventana
+  glutInitWindowSize  (500, 500);	// TamaÃ±o de la Ventana
   glutInitWindowPosition (0, 0);	//Posicion de la Ventana
   glutCreateWindow    ("Practica 5"); // Nombre de la Ventana
   printf("Resolution H: %i \n", screenW);
   printf("Resolution V: %i \n", screenH);
   InitGL ();						// Parametros iniciales de la aplicacion
-  glutDisplayFunc     ( display );  //Indicamos a Glut función de dibujo
-  glutReshapeFunc     ( reshape );	//Indicamos a Glut función en caso de cambio de tamano
-  glutKeyboardFunc    ( keyboard );	//Indicamos a Glut función de manejo de teclado
+  glutDisplayFunc     ( display );  //Indicamos a Glut funciÃ³n de dibujo
+  glutReshapeFunc     ( reshape );	//Indicamos a Glut funciÃ³n en caso de cambio de tamano
+  glutKeyboardFunc    ( keyboard );	//Indicamos a Glut funciÃ³n de manejo de teclado
   glutSpecialFunc     ( arrow_keys );	//Otras
   glutMainLoop        ( );          // 
 
