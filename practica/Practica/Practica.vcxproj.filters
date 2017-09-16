@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main_prac5.cpp">
+    <ClCompile Include="main_prac5_mano-cuerpo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
