@@ -1,3 +1,4 @@
-﻿  main_prac5_mano-cuerpo.cpp
+﻿  main_prac6.cpp
+f:\lab_compu_grafica\practica\practica\main_prac6.cpp(37): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
   Practica.vcxproj -> F:\LAB_compu_grafica\practica\Debug\Practica.exe
   Practica.vcxproj -> F:\LAB_compu_grafica\practica\Debug\Practica.pdb (Partial PDB)
