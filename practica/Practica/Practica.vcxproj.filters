@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main_prac8_texto.cpp">
+    <ClCompile Include="texture.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="texture.cpp">
+    <ClCompile Include="main_prac8_texto2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
